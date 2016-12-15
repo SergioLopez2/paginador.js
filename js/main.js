@@ -9,11 +9,11 @@ $( document ).ready(function() {
 	// inicia el paginador
 	init_paginator(paginador,items,numeros);
 	// se envia la peticion ajax que se realizara como callback
-	set_callback(get_data_callback_clientes_top);
+	set_callback(get_data_callback);
 	cargaPagina(0);
 });
 // peticion ajax enviada como callback
-function get_data_callback_clientes_top(){
+function get_data_callback(){
 	$.ajax({
 		data:{
 		limit: itemsPorPagina,							
